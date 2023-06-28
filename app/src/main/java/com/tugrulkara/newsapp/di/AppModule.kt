@@ -1,6 +1,8 @@
 package com.tugrulkara.newsapp.di
 
 import com.tugrulkara.newsapp.data.remote.NewsApi
+import com.tugrulkara.newsapp.data.repository.RemoteRepositoryImpl
+import com.tugrulkara.newsapp.domain.repository.RemoteRepository
 import com.tugrulkara.newsapp.util.Constants.BASE_URL
 import org.koin.dsl.module
 import retrofit2.Retrofit
@@ -14,6 +16,10 @@ val appModule= module {
             .addConverterFactory(GsonConverterFactory.create())
             .build()
             .create(NewsApi::class.java)
+    }
+
+    single<RemoteRepository> {
+        RemoteRepositoryImpl(get())
     }
 
 
