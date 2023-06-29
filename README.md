@@ -7,6 +7,8 @@ A simple news application that I made using Koin Dependency Injection and StateF
 | ------------- |
 | <img src="https://github.com/tugrulkara/NewsApp/blob/master/Screen/Screenshot_20230629_201506.png" width="250" title="Movie Screen">|
 
+![images](https://github.com/tugrulkara/NewsApp/assets/74429693/2187460d-f455-4e53-aa4d-eba9b42988ea)
+
 
 ## Used Technologies
 
